@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mi Sube Al Metro</title>
+  <!-- Building blocks headers, lists, progress_activity, tabs, toolbars-->
+  <link rel="stylesheet" href="style/headers.css">
+  <link rel="stylesheet" href="style_unstable/lists.css">
+  <link rel="stylesheet" href="style_unstable/progress_activity.css">
+  <link rel="stylesheet" href="style_unstable/tabs.css">
+  <link rel="stylesheet" href="style_unstable/toolbars.css">
+  
+  <!-- Util CSS: some extra tricks -->
+  <link rel="stylesheet" href="util.css">
+  <link rel="stylesheet" href="fonts.css">
+
+  <!-- Additional markup to make Building Blocks kind of cross browser -->
+  <link rel="stylesheet" href="cross_browser.css">
+  
+  <!-- NEW OpenLayers-->
+  <link rel="stylesheet" href="js/openlayers/theme/default/style.css">
+  
+  <!-- NEW App.CSS -->
+  <link rel="stylesheet" href="style/app.css">
+</head>
+<body role="application">
+  <section role="region" id="home-view">
+    <header style="background: url('style/headers/images/ui/headerMetro.png') repeat-x 0 0;">
+      <img src="images/logo.png" height="34" />  
+      <h1 id="titulo" style="margin: 0px 0px 0px 5rem;">Estaciones</h1>
+    </header>
+    <ul role="tablist" data-items="4" style="height: 87%;font-family: 'MozTT', Sans-serif;">
+      <li id="panel1" role="tab">
+        <a href="#panel1" id="btn-estacion" style="padding-top:0.7rem;line-height:2.5rem;"><img id="estacion" alt="Estaciones" src="images/estaciones.png" /></a>
+        <div role="tabpanel" class="active">
+          <section data-type="list">
+            <ul class="estaciones"></ul>
+          </section>
+        </div>                 
+      </li>
+      <li id="panel2" role="tab">
+        <a href="#panel2" id="btn-mapa" style="padding-top:0.7rem;line-height:2.5rem;"><img id="mapa" alt="Mapa" src="images/mapa.png" /></a>
+        <div role="tabpanel" id="info-mapa">
+        </div>                 
+      </li>
+      <li id="panel3" role="tab">
+        <a href="#panel3" id="btn-twitter" style="padding-top:0.7rem;line-height:2.5rem;"><img id="twitter" alt="Twitter" src="images/twitter.png" /></a>
+        <div role="tabpanel" id="info-twitter">
+          <section data-type="list">
+            <ul id="tweet"></ul>
+          </section>
+        </div>                 
+      </li>
+      <li id="panel4" role="tab">
+        <a href="#panel4" id="btn-info" style="padding-top:0.7rem;line-height:2.5rem;"><img id="info" alt="Info" src="images/info.png" /></a>
+        <div role="tabpanel" id="info-page">
+          <h1>Información</h1>              
+          <p>Tarjeta: S/5.0</p>
+          <p>Tarifa adulto: S/. 1.50</p>
+          <p>Tarifa niño/univ: S/0.75</p>
+          <p>Atención: L - D de 6 - 10pm</p>
+          <p>Trámite de tarjeta universitario: estación los cabitos Lunes a Viernes 8am - 1pm, 3pm - 8pm; Sabados 9am - 1pm</p>
+          <p>Web: <a target="_blank" href="http://www.lineauno.pe/" title="Metro de Lima">lineauno.pe</a> </p>
+          <p>Servicio al cliente: <a href="tel:0800-11121">0800-11121</a></p>
+          <p>Objetos perdidos: <a target="_blank" title="Documentos Perdidos" href="http://www.lineauno.pe/documentos.php">aquí</a></p>
+          <p>Info actualizada el: Mayo 24 del 2013</p>
+          <p>Más información <a target="_blank" title="Documentos Perdidos" href="http://www.lineauno.pe/">aquí</a></p>
+        </div>                 
+      </li>
+    </ul>
+  </section>
+
+  <section role="region" id="settings-view">
+    <header>
+      <menu type="toolbar">
+        <button id="settings-btn"><span class="icon icon-close">close</span></button>
+      </menu>
+      <img src="img/logo.png" height="34" />
+      <h1 id="tituloNombreEstacion"></h1>
+      <ul role="tablist" data-type="filter" data-items="2">
+        <li id="filter1-1" role="tab"><a href="#filter1-1">Hacia GRAU</a></li>
+        <li id="filter1-2" role="tab"><a href="#filter1-2">Hacia VES</a></li>
+      </ul>
+    </header>
+    <section id="listaDeHorarios" data-type="list">
+      <br/>
+      <br/>
+      <br/>
+      <ul id="listHorarios"></ul>
+    </section>
+  </section>
+
+  <script type="text/javascript" src="http://zeptojs.com/zepto.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/latlong/latlong.js" charset="utf-8"></script> 
+  <script type="text/javascript" src="js/openlayers/lib/OpenLayers.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/appMetro.js" charset="utf-8"></script>   
+  <script type="text/javascript" src="js/mapa.js" charset="utf-8"></script>
+  
+</body>
+</html>
+
