@@ -23,6 +23,7 @@ Los enlaces de descarga son indicados arriba.
 3. Descargar el archivo http://zeptojs.com/zepto.js y colocarlo en la carpeta 'MiFirefoxOSApp/js'
 4. Descargar las demás librerías OpenLayers, latlong.js desde GitHub, extraer su contenido.
 5. Mover las carpetas de OpenLayers y latlong.js a 'MiFirefoxOSApp/js', y luego renombrarlas a 'openlayers' y 'latlong' respectivamente (sin la cadena '-master').
+6. Finalmente, descargar este repositorio (subealbus-diff), abrir el archivo comprimido, entrar en la carpeta 'subealbus-diff' y extraer sus archivos sobre 'MiFirefoxOSApp'. Como habrá conflicto por archivos que ya existen en Building Blocks, elegir Sobreescribir.
 
 Al concluir estos pasos la aplicación está lista para abrirse:
 * Desde Firefox
