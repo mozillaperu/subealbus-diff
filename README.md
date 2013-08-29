@@ -34,7 +34,7 @@ Al concluir estos pasos la aplicación está lista para abrirse:
 Más información
 ---------------
 Aplicación en el Firefox Marketplace (ligeramente diferente a esta versión)
-* https://marketplace.firefox.com/app/linea-1/
+* https://marketplace.firefox.com/app/subealmetrodelima
 
-Ésta es una aplicación desarrollada por Mozilla Perú
+Ésta es una aplicación desarrollada por el equipo de Mozilla Perú
 * https://www.facebook.com/MozillaPeru
